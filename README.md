@@ -76,22 +76,66 @@ Project ek hi workbook me yeh sab cover karta hai:
 ### 🔄 Project Workflow
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#D4F5E4','primaryTextColor':'#14543D','primaryBorderColor':'#5DBE95','lineColor':'#2EAD7F','secondaryColor':'#A8E6CF','tertiaryColor':'#EAF9F1','fontFamily':'Trebuchet MS'}}}%%
+%%{init: {'theme':'base','themeVariables':{'fontFamily':'Trebuchet MS','fontSize':'15px','primaryTextColor':'#14543D','lineColor':'#2EAD7F','clusterBkg':'#F4FCF8','clusterBorder':'#5DBE95'},'flowchart':{'curve':'basis','nodeSpacing':35,'rankSpacing':70,'htmlLabels':true}}}%%
 flowchart LR
-    A([📄 Raw Data<br/>250 rows]) --> B([📊 Analysis<br/>KPI & Pivot Tables])
-    B --> C([👥 Customer<br/>Analysis])
-    B --> D([🕒 Date, Time<br/>& Filter])
-    B --> E([🎯 What-If<br/>& Goal Seek])
-    B --> F([📈 Regression])
-    C --> G([🎨 Visualizations])
-    D --> G
-    E --> G
-    F --> G
-    G --> H([🧭 Dashboard])
-    H --> I([📝 Final Report<br/>Insights & Story])
-    style A fill:#A8E6CF,stroke:#2EAD7F,color:#14543D
-    style H fill:#7FD1AE,stroke:#1E6B4F,color:#14543D
-    style I fill:#5DBE95,stroke:#1E6B4F,color:#ffffff
+    subgraph S1["📥 STAGE 1 · DATA"]
+        A(["📄 <b>Raw Data</b><br/>250 transactions<br/>21 columns"])
+    end
+
+    subgraph S2["⚙️ STAGE 2 · ANALYSIS ENGINE"]
+        B(["📊 <b>Analysis</b><br/>KPIs & pivot tables"])
+        C(["👥 <b>Customer Analysis</b><br/>Tiers • Top 10"])
+        D(["🕒 <b>DateTime & Filter</b><br/>Dynamic filter"])
+        E(["🎯 <b>What-If</b><br/>Scenarios • Goal Seek"])
+        F(["📈 <b>Regression</b><br/>LINEST • R² 86%"])
+    end
+
+    subgraph S3["🎨 STAGE 3 · VISUALS"]
+        G(["🖼️ <b>Visualizations</b><br/>8 charts"])
+        H(["🧭 <b>Dashboard</b><br/>KPI cards • 4 charts"])
+    end
+
+    subgraph S4["💡 STAGE 4 · STORY"]
+        I(["📝 <b>Final Report</b><br/>Insights & Recommendations"])
+    end
+
+    A ==> B
+    B ==> C
+    B ==> D
+    B ==> E
+    B ==> F
+    C ==> G
+    D ==> G
+    E ==> G
+    F ==> G
+    G ==> H
+    H ==> I
+
+    classDef raw fill:#A8E6CF,stroke:#14543D,stroke-width:3px,color:#14543D;
+    classDef core fill:#D4F5E4,stroke:#2EAD7F,stroke-width:2px,color:#14543D;
+    classDef cust fill:#CDE8FF,stroke:#4A90D9,stroke-width:2px,color:#1B3A5C;
+    classDef time fill:#FFE3C2,stroke:#F29B38,stroke-width:2px,color:#6B3E00;
+    classDef whatif fill:#FFF3B8,stroke:#E0B400,stroke-width:2px,color:#5C4A00;
+    classDef reg fill:#FAD1E2,stroke:#E0608F,stroke-width:2px,color:#6B1F3F;
+    classDef dash fill:#2EAD7F,stroke:#14543D,stroke-width:3px,color:#ffffff;
+    classDef rep fill:#14543D,stroke:#0B2E22,stroke-width:3px,color:#ffffff;
+
+    class A raw;
+    class B core;
+    class C cust;
+    class D time;
+    class E whatif;
+    class F reg;
+    class G core;
+    class H dash;
+    class I rep;
+
+    style S1 fill:#EAF9F1,stroke:#2EAD7F,stroke-width:2px,stroke-dasharray:6 4,color:#14543D
+    style S2 fill:#F4FCF8,stroke:#5DBE95,stroke-width:2px,stroke-dasharray:6 4,color:#14543D
+    style S3 fill:#EAF9F1,stroke:#2EAD7F,stroke-width:2px,stroke-dasharray:6 4,color:#14543D
+    style S4 fill:#F4FCF8,stroke:#5DBE95,stroke-width:2px,stroke-dasharray:6 4,color:#14543D
+
+    linkStyle default stroke:#2EAD7F,stroke-width:3px
 ```
 
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
