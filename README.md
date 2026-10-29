@@ -43,6 +43,8 @@
 
 </div>
 
+<img width="2400" height="2685" alt="dashboard_v2" src="https://github.com/user-attachments/assets/d6646aaa-51fe-4def-bbe7-f60a37e8cb9c" />
+
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
 <a id="about"></a>
