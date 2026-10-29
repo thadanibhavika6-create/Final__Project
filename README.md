@@ -43,8 +43,6 @@
 
 </div>
 
-<img width="2400" height="2685" alt="dashboard_v2" src="https://github.com/user-attachments/assets/d6646aaa-51fe-4def-bbe7-f60a37e8cb9c" />
-
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
 <a id="about"></a>
@@ -52,16 +50,14 @@
 
 **Data Intelligence Dashboard** ek complete, end-to-end **Excel data analytics project** hai. Isme ek sales-transactions dataset (250 rows) ko clean, analyse aur visualise kiya gaya hai — sab kuch **live formulas** ke saath, taaki data badalte hi saare tables, charts aur report khud update ho jaayein. ✨
 
-<img width="2400" height="2685" alt="dashboard_v2" src="https://github.com/user-attachments/assets/c01708d4-0baa-4be5-b160-ef461c74a0f6" />
-
-Project ek hi workbook me yeh sab cover karta hai:
-
 - 📊 **KPI summary** aur pivot-style analysis tables (SUMIFS / COUNTIFS / SUMPRODUCT)
 - 👥 **Customer analysis** — value tiers, top customers, list comparison
 - 🕒 **Date & time functions**, dynamic filter aur auto-timestamp
 - 🎯 **What-If analysis** — Best / Base / Worst scenarios + Goal Seek
 - 📈 **Regression** — ToolPak-style output LINEST se
 - 🎨 **13 charts** + interactive **dashboard** + storytelling **report**
+
+<img width="2400" height="2685" alt="dashboard_v2" src="https://github.com/user-attachments/assets/6124a2d0-3f44-4df8-bbcc-77b12720b425" />
 
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
