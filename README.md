@@ -48,16 +48,16 @@
 <a id="about"></a>
 <img src="https://capsule-render.vercel.app/api?type=waving&color=E1F5FE&height=95&section=header&text=%E2%9C%A6%20About%20the%20Project&fontSize=30&fontColor=0277BD&animation=twinkling&fontAlignY=42" width="100%" alt="About the Project"/>
 
-**Data Intelligence Dashboard** ek complete, end-to-end **Excel data analytics project** hai. Isme ek sales-transactions dataset (250 rows) ko clean, analyse aur visualise kiya gaya hai — sab kuch **live formulas** ke saath, taaki data badalte hi saare tables, charts aur report khud update ho jaayein. ✨
+**Data Intelligence Dashboard** is a complete, end-to-end **Excel data analytics project**. A sales-transactions dataset (250 rows) is cleaned, analysed and visualised — all with **live formulas**, so the moment the data changes, every table, chart and report updates by itself. ✨
 
-- 📊 **KPI summary** aur pivot-style analysis tables (SUMIFS / COUNTIFS / SUMPRODUCT)
+The project covers all of this in a single workbook:
+
+- 📊 **KPI summary** and pivot-style analysis tables (SUMIFS / COUNTIFS / SUMPRODUCT)
 - 👥 **Customer analysis** — value tiers, top customers, list comparison
-- 🕒 **Date & time functions**, dynamic filter aur auto-timestamp
+- 🕒 **Date & time functions**, dynamic filter and auto-timestamp
 - 🎯 **What-If analysis** — Best / Base / Worst scenarios + Goal Seek
-- 📈 **Regression** — ToolPak-style output LINEST se
+- 📈 **Regression** — ToolPak-style output built with LINEST
 - 🎨 **13 charts** + interactive **dashboard** + storytelling **report**
-
-<img width="2400" height="2685" alt="dashboard_v2" src="https://github.com/user-attachments/assets/6124a2d0-3f44-4df8-bbcc-77b12720b425" />
 
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
@@ -69,7 +69,7 @@
 |:-:|:-:|:-:|
 | 3000+ formulas update everything automatically | Bar • Line • Pie • Scatter with trendline | KPI cards, indicators & Top-5 tables on one screen |
 | 🔽 **Dynamic Filter** | 🎯 **What-If + Goal Seek** | 📈 **Regression** |
-| Dropdown se region chuno, rows khud aa jaati hain | Best / Base / Worst scenarios & target solving | LINEST se ToolPak-style full output |
+| Pick a region from the dropdown and matching rows appear automatically | Best / Base / Worst scenarios & target solving | Full ToolPak-style output using LINEST |
 
 </div>
 
@@ -145,13 +145,13 @@ flowchart LR
 
 | ✦ | Objective |
 |:-:|:--|
-| 1 | Raw sales data ko saaf, structured aur analysis-ready banana |
-| 2 | Region, category, product, payment aur segment ke hisaab se performance samajhna |
-| 3 | High-value customers ko identify karna aur unhe tiers me baantna |
-| 4 | Time-based trends aur month-over-month growth track karna |
-| 5 | Scenarios (Best / Base / Worst) se future revenue aur profit ka andaaza lagana |
-| 6 | Ek single dashboard me saare KPIs aur charts dikhana |
-| 7 | Data se **insights aur recommendations** nikaalna |
+| 1 | Clean and structure the raw sales data so it is analysis-ready |
+| 2 | Understand performance by region, category, product, payment method and segment |
+| 3 | Identify high-value customers and divide customers into tiers |
+| 4 | Track time-based trends and month-over-month growth |
+| 5 | Estimate future revenue and profit using Best / Base / Worst scenarios |
+| 6 | Show all KPIs and charts on a single dashboard |
+| 7 | Draw **insights and recommendations** from the data |
 
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
@@ -170,20 +170,20 @@ flowchart LR
 
 | Column | Description |
 |:--|:--|
-| `Transaction_ID` | Har transaction ki unique ID |
-| `Date` | Transaction ki date |
-| `Customer_ID`, `Customer_Name` | Customer ki pehchaan |
+| `Transaction_ID` | Unique ID of each transaction |
+| `Date` | Date of the transaction |
+| `Customer_ID`, `Customer_Name` | Customer identification |
 | `Product_ID`, `Product_Name`, `Category` | Product details (Electronics / Furniture / Appliances) |
-| `Quantity`, `Unit_Price` | Kitni units aur kis price par |
+| `Quantity`, `Unit_Price` | Units sold and price per unit |
 | `Payment_Method` | Cash / Credit Card / Debit Card / PayPal |
 | `Region` | Central / East / North / South / West |
 | `Customer_Segment` | Basic / Standard / Premium |
-| `Customer_Since` | Customer kab judaa |
+| `Customer_Since` | Date the customer joined |
 | `Total_Amount` | Quantity × Unit_Price |
 
 **⚙️ Helper columns (formulas):** `Month_Start`, `Month_End`, `Tenure_Yrs`, `Days_Since_Purchase`, `Name_Count`, `Purchase_Type` (First / Repeat), `Filter_Seq`
 
-<!-- 📸 Apne Dashboard ka screenshot yahan add karo (repo me images/dashboard.png upload karke):
+<!-- 📸 Add your Dashboard screenshot here (upload it to the repo as images/dashboard.png):
 <img src="images/dashboard.png" width="100%" alt="Dashboard preview"/>
 -->
 
@@ -231,8 +231,8 @@ flowchart LR
 
 - Customer-wise **orders, units, revenue, AOV** and **revenue rank**
 - **Value Tiers** — High / Mid / Low (percentile threshold is an input cell)
-- Customer **initials** aur auto-generated **customer code**
-- **Top 10 customers** aur tier-wise revenue summary
+- Customer **initials** and auto-generated **customer code**
+- **Top 10 customers** and tier-wise revenue summary
 - **Compare Two Lists** — Electronics buyers vs Furniture buyers (matching names extracted)
 
 </details>
@@ -241,9 +241,9 @@ flowchart LR
 <summary><b>🕒 3. DateTime_Filter</b> — time functions & dynamic filter</summary>
 <br/>
 
-- `TODAY`, `NOW`, `DATEDIF`, `EOMONTH` ke practical use
-- **Dynamic filter:** Region (dropdown) + minimum amount choose karo, matching rows khud aa jaati hain
-- **Auto-timestamp:** entry likhte hi `NOW()` ka time freeze ho jaata hai (iterative calculation se)
+- Practical use of `TODAY`, `NOW`, `DATEDIF` and `EOMONTH`
+- **Dynamic filter:** choose a Region (dropdown) and a minimum amount, and the matching rows appear automatically
+- **Auto-timestamp:** as soon as an entry is typed, the `NOW()` time freezes (using iterative calculation)
 
 </details>
 
@@ -252,9 +252,9 @@ flowchart LR
 <br/>
 
 - Base / Best / Worst scenarios (price change, volume change, discount)
-- Scenario dropdown (1 / 2 / 3) se **Selected** column badalta hai
-- Projected Revenue, Cost, **Profit**, Profit Margin aur Base se comparison
-- **Goal Seek:** target revenue growth paane ke liye kitna volume change chahiye
+- The scenario dropdown (1 / 2 / 3) switches the **Selected** column
+- Projected Revenue, Cost, **Profit**, Profit Margin and comparison with Base
+- **Goal Seek:** how much volume change is needed to reach a target revenue growth
 
 </details>
 
@@ -264,7 +264,7 @@ flowchart LR
 
 - `Y = Total_Amount`, `X1 = Quantity`, `X2 = Unit_Price`
 - Multiple R, R², Adjusted R², Standard Error, ANOVA, Coefficients, t-Stat, P-value, 95% limits
-- Fitted-equation se **prediction** + scatter chart with trendline
+- **Prediction** from the fitted equation + scatter chart with trendline
 
 </details>
 
@@ -274,7 +274,7 @@ flowchart LR
 
 **Charts:** Revenue by Region • Revenue Share by Category • Monthly Revenue Trend • Top 10 Customers • Units Sold by Product • Revenue Share by Payment Method • Revenue by Customer Segment • Orders by Region
 
-**Dashboard:** 5 KPI cards, last-month vs previous-month indicators (with direction icons), regional pivot-style table, Top 5 customers, Top 5 products aur 4 charts — ek hi screen par.
+**Dashboard:** 5 KPI cards, last-month vs previous-month indicators (with direction icons), regional pivot-style table, Top 5 customers, Top 5 products and 4 charts — all on a single screen.
 
 </details>
 
@@ -282,7 +282,7 @@ flowchart LR
 <summary><b>📝 8. Report</b> — insights & storytelling</summary>
 <br/>
 
-Summary insights, top customers, most-sold products, regional sales, aur 10-point **data story** (Overview → Regions → Categories → Products → Customers → Time trend → Payments → Loyalty → Regression → What-If) with final **recommendations**.
+Summary insights, top customers, most-sold products, regional sales, and a 10-point **data story** (Overview → Regions → Categories → Products → Customers → Time trend → Payments → Loyalty → Regression → What-If) with final **recommendations**.
 
 </details>
 
@@ -299,18 +299,18 @@ Summary insights, top customers, most-sold products, regional sales, aur 10-poin
 
 </div>
 
-- 🌍 **East** sabse strong region hai (~59.3K revenue, ≈26%), uske baad **North** (~50.8K); **South** sabse kam (~36.4K).
-- 💻 **Electronics** akela ≈ **75%** revenue deta hai; **Appliances** ka hissa sirf ≈ 4% hai.
-- 🏆 **Laptop** aur **Smartphone** lagbhag barabar top revenue products hain (~67K each); units me **Bookshelf** aage hai (102 units).
-- 👑 Top customer **Mark Carter** hai (~15.7K), uske baad Edward Mitchell aur Barbara Young.
-- 💎 Sirf **10 High-Value customers** total revenue ka ≈ **41%** laate hain.
-- 🔁 **80%** transactions repeat purchases hain.
-- 💳 Payment methods me revenue lagbhag balanced hai — **Credit Card** thoda aage (≈27%).
-- ⭐ **Premium** aur **Standard** segments milkar revenue ka ≈ 73% banate hain.
-- 📅 Sabse best month **Jan-25** raha (~25.8K).
-- 📈 Regression ke hisaab se **Quantity** aur **Unit_Price** milkar order value ka ≈ **86%** variation explain karte hain.
+- 🌍 **East** is the strongest region (~59.3K revenue, ≈26%), followed by **North** (~50.8K); **South** is the lowest (~36.4K).
+- 💻 **Electronics** alone brings in ≈ **75%** of revenue; **Appliances** contribute only ≈ 4%.
+- 🏆 **Laptop** and **Smartphone** are almost tied as the top revenue products (~67K each); by units, **Bookshelf** leads (102 units).
+- 👑 The top customer is **Mark Carter** (~15.7K), followed by Edward Mitchell and Barbara Young.
+- 💎 Just **10 High-Value customers** bring in ≈ **41%** of total revenue.
+- 🔁 **80%** of transactions are repeat purchases.
+- 💳 Revenue is fairly balanced across payment methods — **Credit Card** is slightly ahead (≈27%).
+- ⭐ **Premium** and **Standard** segments together make up ≈ 73% of revenue.
+- 📅 The best month was **Jan-25** (~25.8K).
+- 📈 According to the regression, **Quantity** and **Unit_Price** together explain ≈ **86%** of the variation in order value.
 
-> 📌 *Numbers dataset ke current snapshot par based hain; workbook me sab kuch live formulas se update hota hai.*
+> 📌 *Numbers are based on the current snapshot of the dataset; everything in the workbook updates through live formulas.*
 
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
@@ -357,7 +357,7 @@ Summary insights, top customers, most-sold products, regional sales, aur 10-poin
 | 🌟 Best | +5% | +10% | 2% | 259,423 | 82,945 |
 | 🌧️ Worst | −3% | −10% | 8% | 184,078 | 39,687 |
 
-> 🎯 **Goal Seek:** Base se **+15% revenue** paane ke liye ≈ **11.8% volume growth** chahiye.
+> 🎯 **Goal Seek:** to reach **+15% revenue** over Base, a ≈ **11.8% volume growth** is needed.
 
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
@@ -379,37 +379,37 @@ Summary insights, top customers, most-sold products, regional sales, aur 10-poin
 <a id="howto"></a>
 <img src="https://capsule-render.vercel.app/api?type=waving&color=E1F5FE&height=95&section=header&text=%E2%9C%A7%20How%20to%20Use&fontSize=30&fontColor=0277BD&animation=twinkling&fontAlignY=42" width="100%" alt="How to Use"/>
 
-1. 📥 **Download** karke `Final_Project1.xlsx` ko **Microsoft Excel** me kholo.
-2. 🧭 Sabse pehle **Dashboard** sheet dekho — poora summary wahin hai.
-3. 🔽 **DateTime_Filter** me Region dropdown aur minimum amount change karke dynamic filter try karo.
-4. 🎯 **What-If** me scenario number (1 / 2 / 3) badalke projected revenue & profit dekho.
-5. 📝 Aakhir me **Report** sheet padho — insights aur recommendations wahin hain.
+1. 📥 **Download** `Final_Project1.xlsx` and open it in **Microsoft Excel**.
+2. 🧭 Start with the **Dashboard** sheet — the full summary is there.
+3. 🔽 In **DateTime_Filter**, change the Region dropdown and the minimum amount to try the dynamic filter.
+4. 🎯 In **What-If**, change the scenario number (1 / 2 / 3) to see projected revenue & profit.
+5. 📝 Finally, read the **Report** sheet — the insights and recommendations are there.
 
 ### ⚠️ Important Notes
 
-- 🔁 **Auto-timestamp** ke liye: `File → Options → Formulas → Enable iterative calculation` ON karo.
-- 📅 `TODAY()` / `NOW()` volatile hain, isliye *Days Since Purchase* jaise columns roz badalte rahenge.
-- 📉 **Apr 2025** ek *partial month* hai (data 11 Apr 2025 tak hi hai), isliye MoM comparison me dhyan rakho.
-- 📐 Regression me `Total_Amount = Quantity × Unit_Price` hota hai, isliye straight-line model sirf ek approximation hai.
-- 💡 What-If ka *cost %* (70%) ek **assumption** hai, dataset me cost data nahi tha.
+- 🔁 For the **auto-timestamp**, turn ON `File → Options → Formulas → Enable iterative calculation`.
+- 📅 `TODAY()` / `NOW()` are volatile, so columns like *Days Since Purchase* will change every day.
+- 📉 **Apr 2025** is a *partial month* (data only goes up to 11 Apr 2025), so be careful with MoM comparisons.
+- 📐 In this data `Total_Amount = Quantity × Unit_Price`, so a straight-line regression model is only an approximation.
+- 💡 The *cost %* (70%) in What-If is an **assumption**, as the dataset has no cost data.
 
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=E1F5FE&height=95&section=header&text=%E2%98%85%20Recommendations%20%26%20Future%20Scope&fontSize=30&fontColor=0277BD&animation=twinkling&fontAlignY=42" width="100%" alt="Recommendations and Future Scope"/>
 
 **💡 Recommendations**
-- High-Value customers aur top region (East) par marketing focus karo.
-- Slow-moving **Appliances** ko high-selling Electronics ke saath bundles / offers me jodo.
-- Sabse kamzor region (South) ke liye targeted offers chalao.
-- Preferred payment options ko checkout par push karo.
-- Repeat purchases badhane ke liye loyalty ya segment-based offers do.
-- Dashboard ke MoM arrows se monthly slowdown jaldi pakdo.
+- Focus marketing on High-Value customers and the top region (East).
+- Bundle slow-moving **Appliances** with high-selling Electronics in offers.
+- Run targeted offers for the weakest region (South).
+- Promote the preferred payment options at checkout.
+- Offer loyalty or segment-based deals to increase repeat purchases.
+- Use the Dashboard's MoM arrows to spot monthly slowdowns early.
 
 **🚀 Future Scope**
-- Real **Slicers** aur **Timeline** add karna
-- Power Query / Power Pivot se bade datasets handle karna
-- Forecasting (trend / seasonality) jodna
-- Power BI dashboard version banana
+- Add real **Slicers** and a **Timeline**
+- Handle larger datasets with Power Query / Power Pivot
+- Add forecasting (trend / seasonality)
+- Build a Power BI dashboard version
 
 <br/>
 
