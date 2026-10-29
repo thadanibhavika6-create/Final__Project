@@ -1,4 +1,3 @@
-# Final__Project
 
 # DATA-INTELLIGENCE-DASHBOARD
 <!-- ✦ Data Intelligence Dashboard • README ✦ -->
