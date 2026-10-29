@@ -59,6 +59,9 @@ The project covers all of this in a single workbook:
 - 📈 **Regression** — ToolPak-style output built with LINEST
 - 🎨 **13 charts** + interactive **dashboard** + storytelling **report**
 
+<img width="2400" height="2685" alt="dashboard_v2" src="https://github.com/user-attachments/assets/80b34547-66a6-41f0-9d50-f97dd87b256b" />
+ 
+
 <p align="center">✦ ･ ﾟ: *✧･ﾟ:* ─────── ❀ ─────── *:･ﾟ✧*:･ﾟ ✦</p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=E1F5FE&height=95&section=header&text=%E2%9C%A8%20Project%20Highlights&fontSize=30&fontColor=0277BD&animation=twinkling&fontAlignY=42" width="100%" alt="Project Highlights"/>
