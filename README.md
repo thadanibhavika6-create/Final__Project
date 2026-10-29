@@ -52,6 +52,8 @@
 
 **Data Intelligence Dashboard** ek complete, end-to-end **Excel data analytics project** hai. Isme ek sales-transactions dataset (250 rows) ko clean, analyse aur visualise kiya gaya hai — sab kuch **live formulas** ke saath, taaki data badalte hi saare tables, charts aur report khud update ho jaayein. ✨
 
+<img width="2400" height="2685" alt="dashboard_v2" src="https://github.com/user-attachments/assets/c01708d4-0baa-4be5-b160-ef461c74a0f6" />
+
 Project ek hi workbook me yeh sab cover karta hai:
 
 - 📊 **KPI summary** aur pivot-style analysis tables (SUMIFS / COUNTIFS / SUMPRODUCT)
